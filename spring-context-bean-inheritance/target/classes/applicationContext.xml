@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+	
+	<bean id="parentPersonBean" class="com.raghu.bean.Person" abstract="true">
+		<property name="city" value="Hyd" />
+		<property name="country" value="India" />
+	</bean>
+	<bean id="childPersonBean1" parent="parentPersonBean">
+		<property name="name" value="Srinu" />
+		<property name="phone" value="8989898988" />
+		<property name="email" value="Srinu@gmail.com" />
+		<property name="city" value="Chennai" />
+	</bean>
+	<bean id="childPersonBean2" parent="parentPersonBean" class="com.raghu.bean.Person">
+		<property name="name" value="Hari" />
+		<property name="phone" value="7875444333" />
+		<property name="email" value="hari@gmail.com" />
+	</bean>
+
+
+
+</beans>

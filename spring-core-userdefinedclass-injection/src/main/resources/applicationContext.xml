@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+	<bean id="messageService" class="com.raghu.bean.MessageServiceImpl">
+		<property name="email" ref="email"></property>
+		<property name="date" ref="date"></property>
+	</bean>
+	<bean id="date" class="java.util.Date">
+		<property name="year" value="118"></property>
+		<property name="month" value="10"></property>
+		<property name="date" value="19"></property>
+	</bean>
+	<bean id="email" class="com.raghu.bean.Email">
+		<property name="from" value="raghu@gmail.com"></property>
+		<property name="content" value="Hello, Please Practice the spring program."></property>
+	</bean>
+
+</beans>
