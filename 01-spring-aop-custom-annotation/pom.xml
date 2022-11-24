@@ -7,8 +7,7 @@
 	<properties>
 		<spring-framework.version>4.3.2.RELEASE
 		</spring-framework.version>
-		<hibernate-framework.version>4.3.5.Final
-		</hibernate-framework.version>
+		<hibernate-framework.version>5.3.20.Final</hibernate-framework.version>
 		<aspectj.version>1.8.13</aspectj.version>
 	</properties>
 
